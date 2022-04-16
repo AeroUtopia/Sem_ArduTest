@@ -18,7 +18,7 @@ void sendSMS()
 {
   Serial1.println("AT+CMGF=1\r");                       // AT command to send SMS message
   delay(1000);
-  Serial1.println("AT+CMGS = \"+251944336801\"");       // 251944336801 251910341442 recipient's mobile number, in international format
+  Serial1.println("AT+CMGS = \"+2519443368xx\"");       // 2519443368xx 2519103414xx recipient's mobile number, in international format
  
   delay(1000);
   Serial1.println("Current measured temprature:");                           // message to send
